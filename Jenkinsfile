@@ -48,7 +48,7 @@ pipeline {
                 bat '''
                 docker stop node-app || exit 0
                 docker rm node-app || exit 0
-                docker run -d -p 3000:3000 --name node-app %IMAGE_NAME%:latest
+                docker run -d -p 3002:3000 --name node-app %IMAGE_NAME%:latest
                 '''
             }
         }
