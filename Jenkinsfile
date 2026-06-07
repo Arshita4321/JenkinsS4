@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/your-repo.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'npm install'
